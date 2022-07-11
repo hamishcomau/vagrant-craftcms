@@ -1,7 +1,10 @@
+# Introduction
+This is a guide to setup a new installation of Craft CMS, running in an Ubuntu 22.04 Vagrant Box, on an Ubuntu 22.04 Host machine. There are probably better alternatives (I have used the official Craft CMS Docker images) but for me personally this is the easiest and cleanest way to get up and running locally with CraftCMS.
+
 Clone Repository
 ================
 
-Clone Github repository to your local development machine:
+Clone Github repository to your local development machine:  
 `git clone git@github.com:hamishcomau/vagrant-craftcms.git`
 
 ---
@@ -63,7 +66,7 @@ Restart Apache2:
 
 * `sudo systemctl restart apache2`
 
-Update Virtual Host File:
+Update Virtual Host File by replacing the contents with the block below:
 
 * `sudo nano /etc/apache2/sites-available/000-default.conf`
 
@@ -104,15 +107,10 @@ Install Craft CMS, answer yes to all questions:
 * `sudo composer create-project craftcms/craft /var/www/html/craft`
 
 Which database driver are you using? `mysql`  
-
 Database server name or IP address: `127.0.0.1`  
-
 Database port: `3306`  
-
 Database username: `yourapp`  
-
 Database password: `6b$uFrdR79FGkxY^`  
-
 Database name: `yourapp`
 
 ---
