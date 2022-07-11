@@ -7,14 +7,10 @@ Clone Repository
 Clone Github repository to your local development machine:  
 `git clone git@github.com:hamishcomau/vagrant-craftcms.git`
 
----
-
 Project Name
 ============
 
 Search for all instances of `yourapp` and replace with your preferred project name.
-
----
 
 Deploy Vagrant Box
 ==================
@@ -36,8 +32,6 @@ The deployment process may take a bit of time to download the Vagrant box and st
 
 * `vagrant ssh`
 
----
-
 MySQL Configuration
 ========================
 
@@ -48,8 +42,6 @@ Create MySQL User and Database:
 * `CREATE USER 'yourapp'@'%' IDENTIFIED BY '6b$uFrdR79FGkxY^';`
 * `GRANT ALL PRIVILEGES ON yourapp.* TO 'yourapp'@'%';`
 * `exit`
-
----
 
 Apache2 Configuration
 ========================
@@ -97,8 +89,6 @@ Restart Apache2:
 
 * `sudo systemctl restart apache2`
 
----
-
 Install Craft and Dependencies
 ==============================
 
@@ -112,8 +102,6 @@ Database port: `3306`
 Database username: `yourapp`  
 Database password: `6b$uFrdR79FGkxY^`  
 Database name: `yourapp`
-
----
 
 Post Installation
 =================
@@ -147,5 +135,3 @@ Import MySQL database dump:
 * `sudo -s`
 * `cd /var/www/html`
 * `mysql yourapp < yourapp.sql`
-
----
