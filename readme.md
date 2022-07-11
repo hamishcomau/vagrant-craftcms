@@ -1,9 +1,7 @@
 Clone Repository
 ================
 
-Clone Github repository to your local development machine:
-
-* `git clone git@github.com:hamishcomau/vagrant-craftcms.git`
+Clone Github repository to your local development machine: `git clone git@github.com:hamishcomau/vagrant-craftcms.git`
 
 ---
 
@@ -52,7 +50,7 @@ Create MySQL User and Database:
 Apache2 Configuration
 ========================
 
-Generate private root key and certificate, you will need to remember the passphrase whilst generating the key and SSL certificate:
+Generate private root key and certificate:
 
 * `openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout yourapp.key -out yourapp.crt`
 
@@ -104,23 +102,12 @@ Install Craft CMS, answer yes to all questions:
 
 * `sudo composer create-project craftcms/craft /var/www/html/craft`
 
-Which database driver are you using?
-* `mysql`
-
-Database server name or IP address:
-* `127.0.0.1`
-
-Database port:
-* `3306`
-
-Database username:
-* `yourapp`
-
-Database password:
-* `6b$uFrdR79FGkxY^`
-
-Database name:
-* `yourapp`
+Which database driver are you using? `mysql`
+Database server name or IP address: `127.0.0.1`
+Database port: `3306`
+Database username: `yourapp`
+Database password: `6b$uFrdR79FGkxY^`
+Database name: `yourapp`
 
 ---
 
