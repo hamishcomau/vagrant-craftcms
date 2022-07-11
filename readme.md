@@ -1,7 +1,8 @@
 Clone Repository
 ================
 
-Clone Github repository to your local development machine: `git clone git@github.com:hamishcomau/vagrant-craftcms.git`
+Clone Github repository to your local development machine:
+`git clone git@github.com:hamishcomau/vagrant-craftcms.git`
 
 ---
 
@@ -102,11 +103,16 @@ Install Craft CMS, answer yes to all questions:
 
 * `sudo composer create-project craftcms/craft /var/www/html/craft`
 
-Which database driver are you using? `mysql`
-Database server name or IP address: `127.0.0.1`
-Database port: `3306`
-Database username: `yourapp`
-Database password: `6b$uFrdR79FGkxY^`
+Which database driver are you using? `mysql`  
+
+Database server name or IP address: `127.0.0.1`  
+
+Database port: `3306`  
+
+Database username: `yourapp`  
+
+Database password: `6b$uFrdR79FGkxY^`  
+
 Database name: `yourapp`
 
 ---
