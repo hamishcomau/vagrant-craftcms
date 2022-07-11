@@ -1,19 +1,16 @@
 # Introduction
 This is a guide to setup a new installation of Craft CMS, running in an Ubuntu 22.04 Vagrant Box, on an Ubuntu 22.04 Host machine. There are probably better alternatives (I have used the official Craft CMS Docker images) but for me personally this is the easiest and cleanest way to get up and running locally with CraftCMS.
 
-Clone Repository
-================
+## Clone Repository
 
 Clone Github repository to your local development machine:  
 `git clone git@github.com:hamishcomau/vagrant-craftcms.git`
 
-Project Name
-============
+## Project Name
 
 Search for all instances of `yourapp` and replace with your preferred project name.
 
-Deploy Vagrant Box
-==================
+## Deploy Vagrant Box
 
 This requires both Virtualbox and Vagrant to be installed on your local machine:
 
@@ -32,8 +29,7 @@ The deployment process may take a bit of time to download the Vagrant box and st
 
 * `vagrant ssh`
 
-MySQL Configuration
-========================
+## MySQL Configuration
 
 Create MySQL User and Database:
 
@@ -43,8 +39,7 @@ Create MySQL User and Database:
 * `GRANT ALL PRIVILEGES ON yourapp.* TO 'yourapp'@'%';`
 * `exit`
 
-Apache2 Configuration
-========================
+## Apache2 Configuration
 
 Generate private root key and certificate:
 
@@ -89,8 +84,7 @@ Restart Apache2:
 
 * `sudo systemctl restart apache2`
 
-Install Craft and Dependencies
-==============================
+## Install Craft and Dependencies
 
 Install Craft CMS, answer yes to all questions:
 
@@ -103,8 +97,9 @@ Database username: `yourapp`
 Database password: `6b$uFrdR79FGkxY^`  
 Database name: `yourapp`
 
-Post Installation
-=================
+## Post Installation
+
+These are not requirements, just helpful tools that might be needed such as importing a database or fixing up file/folder permissions.
 
 Set all directories to 755 and files to 644, and set ownership to www-data:
 
